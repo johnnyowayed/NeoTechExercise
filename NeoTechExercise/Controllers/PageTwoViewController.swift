@@ -25,8 +25,8 @@ class PageTwoViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         self.title = "Goal Status"
-        self.setupUI()
         self.scrollView.delegate = self
+        self.setupUI()
         self.fetchData()
     }
     
@@ -41,6 +41,7 @@ class PageTwoViewController: UIViewController, UIScrollViewDelegate {
         self.label_Title.applySemiBoldFont(ofSize: 18)
         self.label_Decription.text = "In order for you to get back on track and acheive you goal. we recommend following one of these options. Select an option to see its impact on your financial path on the chart."
         self.label_Decription.applyRegularFont(ofSize: 16)
+        self.label_Decription.textColor = .gray
         
     }
     
@@ -81,9 +82,14 @@ class PageTwoViewController: UIViewController, UIScrollViewDelegate {
             optionView.view_Shadow.layer.shadowOpacity = 0.3
             optionView.view_Shadow.layer.shadowOffset = .zero
             optionView.view_Shadow.layer.shadowRadius = 10
+            optionView.label_Number.applyRegularFont(ofSize: 12)
+            optionView.label_Name.applyRegularFont(ofSize: 18)
+            optionView.label_Deposit.applyBoldFont(ofSize: 25)
+            optionView.label_Descrition.applyRegularFont(ofSize: 12)
+            optionView.label_Selection.applySemiBoldFont(ofSize: 18)
             optionView.label_Number.text = "Option " + "\(i+1)"
             optionView.label_Name.text = self.array_Data[i].name
-            optionView.label_Deposit.text = "$" + "\(self.array_Data[i].riskScore * 1000)"
+            optionView.label_Deposit.text = "$" + "\(Int(self.array_Data[i].riskScore * 1000))"
             optionView.label_Descrition.text = self.array_Data[i].description
             unselectedOptionViewTheme(optionView: optionView ,color: .black, backgroundColor: .white)
             

@@ -14,6 +14,7 @@ class PageThreeTableViewController: UITableViewController, ChartViewDelegate {
     
     var array_HistoricalData = [HistoricalDataModel]()
     var portfolio = PortfolioModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -91,7 +92,7 @@ class PageThreeTableViewController: UITableViewController, ChartViewDelegate {
         
         let set2 = LineChartDataSet(entries: array_ChartDataEntrySet2, label: "Bench Mark")
         set2.drawIconsEnabled = false
-        set2.setColor(UIColor.darkGray)
+        set2.setColor(UIColor.black)
         set2.circleRadius = 0
         set2.lineWidth = 2
         set2.drawValuesEnabled = false
@@ -106,18 +107,16 @@ class PageThreeTableViewController: UITableViewController, ChartViewDelegate {
 // MARK: - Table view data source
 extension PageThreeTableViewController{
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 4
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        cell.selectionStyle = .none
         (cell.viewWithTag(1) as? UILabel)?.applyBoldFont()
         (cell.viewWithTag(2) as? UILabel)?.applyRegularFont(ofSize: 12)
         (cell.viewWithTag(2) as? UILabel)?.textColor = .darkGray
@@ -128,13 +127,25 @@ extension PageThreeTableViewController{
                 (cell.viewWithTag(2) as? UILabel)?.text = portfolio.id
             case 1:
                 (cell.viewWithTag(1) as? UILabel)?.text = "Created At"
-                (cell.viewWithTag(2) as? UILabel)?.text = portfolio.createdAt
+                var formattedDate:String = ""
+                let dateFormatterGet = DateFormatter()
+                dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+                
+                let dateFormatterPrint = DateFormatter()
+                dateFormatterPrint.dateFormat = "d MMMM"
+                
+                if let date = dateFormatterGet.date(from: portfolio.createdAt) {
+                    formattedDate = dateFormatterPrint.string(from: date)
+                } else {
+                   print("There was an error decoding the string")
+                }
+                (cell.viewWithTag(2) as? UILabel)?.text = formattedDate
             case 2:
                 (cell.viewWithTag(1) as? UILabel)?.text = "Risk Score"
-                (cell.viewWithTag(2) as? UILabel)?.text = "\(portfolio.modifiedRiskScore)"
+                (cell.viewWithTag(2) as? UILabel)?.text = "\(Int(portfolio.modifiedRiskScore))"
             case 3:
                 (cell.viewWithTag(1) as? UILabel)?.text = "Invertment Type"
-                (cell.viewWithTag(2) as? UILabel)?.text = portfolio.investmentType
+                (cell.viewWithTag(2) as? UILabel)?.text = portfolio.investmentType.uppercased()
             default:
                 break
         }
