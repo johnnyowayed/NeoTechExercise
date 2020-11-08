@@ -1,0 +1,260 @@
+{
+    "portfolios": [
+        {
+            "id": "12459679-6788-12387f-bd63-1231875dbda",
+            "created_at": "2019-01-01 15:14:23.464706",
+            "name": "General",
+            "balance": 45000.0,
+            "total_earnings": 350.0,
+            "latest_daily_earning": 0.0,
+            "modified_risk_score": 4,
+            "investment_type": "mmf"
+        },
+        {
+            "id": "2109476adj-1231-1233g-b7876-8724981341",
+            "created_at": "2020-02-02 15:14:23.464706",
+            "name": "General",
+            "balance": 150000.0,
+            "total_earnings": 750.0,
+            "latest_daily_earning": 0.0,
+            "modified_risk_score": 3,
+            "investment_type": "mmf"
+        },
+        {
+            "id": "6786784D-7961-a5684-b1233-687123212",
+            "created_at": "2020-01-04 15:14:23.464706",
+            "name": "Islamic",
+            "balance": 10000.0,
+            "total_earnings": 50.0,
+            "latest_daily_earning": 0.0,
+            "modified_risk_score": 3,
+            "investment_type": "etf_mix"
+        },
+        {
+            "id": "13134DG3-1234-9fb89-b1233-12sdfs2jd",
+            "created_at": "2019-09-11 15:14:23.464706",
+            "name": "Islamic",
+            "balance": 75000.0,
+            "total_earnings": 50.0,
+            "latest_daily_earning": 0.0,
+            "modified_risk_score": 2,
+            "investment_type": "etf_mix"
+        }
+    ],
+
+    "options": [
+        {
+            "id": "quarterly_deposits",
+            "name": "Quarterly Deposits",
+            "short_description": "Smaller quarterly recurring deposits to get you on track",
+            "risk_score": 1
+        },
+        {
+            "id": "quarterly_deposits",
+            "name": "Quarterly Deposit",
+            "short_description": "Very small monthly recurring deposits to get you on track",
+            "risk_score": 5
+        },
+        {
+            "id": "annual_deposits",
+            "name": "Yearly Deposits",
+            "short_description": "Large, yearly recurring deposits to get you on track",
+            "risk_score": 9
+        }
+    ],
+
+    "historical_data": [
+        {
+            "date": "Jun 2004",
+            "date_js": "1086048000",
+            "smartWealthValue": 10000,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2005",
+            "date_js": "1104582013",
+            "smartWealthValue": 10662,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2005",
+            "date_js": "1117584000",
+            "smartWealthValue": 10973,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2006",
+            "date_js": "1136118013",
+            "smartWealthValue": 11156,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2006",
+            "date_js": "1149164413",
+            "smartWealthValue": 11086,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2007",
+            "date_js": "1167654013",
+            "smartWealthValue": 11836,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2007",
+            "date_js": "1180656000",
+            "smartWealthValue": 12060,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2008",
+            "date_js": "1199190013",
+            "smartWealthValue": 12719,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2008",
+            "date_js": "1212278400",
+            "smartWealthValue": 12744,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2009",
+            "date_js": "1230812413",
+            "smartWealthValue": 12821,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2009",
+            "date_js": "1243814400",
+            "smartWealthValue": 12587,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2010",
+            "date_js": "1262348413",
+            "smartWealthValue": 13268,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2010",
+            "date_js": "1275350400",
+            "smartWealthValue": 13596,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2011",
+            "date_js": "1293884413",
+            "smartWealthValue": 14282,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2011",
+            "date_js": "1306886400",
+            "smartWealthValue": 14823,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2012",
+            "date_js": "1325420413",
+            "smartWealthValue": 15536,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2012",
+            "date_js": "1338508800",
+            "smartWealthValue": 15927,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2013",
+            "date_js": "1357042813",
+            "smartWealthValue": 16286,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2013",
+            "date_js": "1370044800",
+            "smartWealthValue": 16481,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2014",
+            "date_js": "1388578813",
+            "smartWealthValue": 16380,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2014",
+            "date_js": "1401580800",
+            "smartWealthValue": 16978,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2015",
+            "date_js": "1420114813",
+            "smartWealthValue": 17653,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2015",
+            "date_js": "1433116800",
+            "smartWealthValue": 17664,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2016",
+            "date_js": "1451650813",
+            "smartWealthValue": 17784,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2016",
+            "date_js": "1464739200",
+            "smartWealthValue": 18754,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2017",
+            "date_js": "1483273213",
+            "smartWealthValue": 18361,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2017",
+            "date_js": "1496275200",
+            "smartWealthValue": 19028,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2018",
+            "date_js": "1514809213",
+            "smartWealthValue": 19335,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2018",
+            "date_js": "1527855613",
+            "smartWealthValue": 18983,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jan 2019",
+            "date_js": "1546345213",
+            "smartWealthValue": 19284,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Jun 2019",
+            "date_js": "1559391613",
+            "smartWealthValue": 20490,
+            "benchmarkValue": 0
+        },
+        {
+            "date": "Sep 2019",
+            "date_js": "1567340413",
+            "smartWealthValue": 21521,
+            "benchmarkValue": 0
+        }
+    ]
+}

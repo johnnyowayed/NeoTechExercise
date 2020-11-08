@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - GestureRecognizerClosures (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - GestureRecognizerClosures
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - GestureRecognizerClosures
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  GestureRecognizerClosures: 0dcafb45e669e7a775c840383e54b3d16983037b
+
+PODFILE CHECKSUM: 38204acf8ec6cf202242ac065a02dc08ee1226f9
+
+COCOAPODS: 1.10.0
